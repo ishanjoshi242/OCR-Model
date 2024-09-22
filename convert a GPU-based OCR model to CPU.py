@@ -4,7 +4,7 @@ import numpy as np
 import plotly.graph_objects as go
 
 # Load the OCR model
-model_path = 'C:/Users/asus/Music/tensorflow project/ocr_model.h5'
+model_path = 'C:/Users/Ishan/project1/ocr_model.h5'
 model = tf.keras.models.load_model(model_path)
 
 # Load the model for CPU inference
@@ -26,7 +26,7 @@ input_shape = model.input_shape
 height, width, channels = input_shape[1], input_shape[2], input_shape[3]
 
 # Load the video file
-video_path = 'C:/Users/asus/Music/tensorflow project/OCR Alphabet.mp4'
+video_path = 'C:/Users/Ishan/project1/OCR Alphabet.mp4'
 cap = cv2.VideoCapture(video_path)
 
 # Preprocessing function for each frame
