@@ -40,7 +40,7 @@ def load_dataset(dataset_path):
 
 
 # Example usage
-dataset_path = 'C:/Users/asus/Music/tensorflow project/archive (1)/data/testing_data'  # Path to your dataset
+dataset_path = 'C:/Users/Ishan/project1/data/test_data'  # Path to your dataset
 images, labels, label_map = load_dataset(dataset_path)
 print(f"Loaded {len(images)} images with {len(set(labels))} unique labels from dataset.")
 print(f"Label map: {label_map}")
@@ -109,9 +109,9 @@ def get_char_from_label(index):
 
 
 # Run inference on a sample image
-image_path = 'C:/Users/asus/Music/tensorflow project/archive (1)/data/testing_data/0/28562.png'
+image_path = 'C:/Users/Ishan/project1/data/test_data/0/2344.png'
 predicted_text = ocr_inference(model, image_path)
 print(f"Predicted Text: {predicted_text}")
 
 # Save the trained model
-model.save('C:/Users/asus/Music/tensorflow project/ocr_model.h5')
+model.save('C:/Users/Ishan/project1/ocr_model.h5')
